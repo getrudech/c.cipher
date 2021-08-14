@@ -2,8 +2,9 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args)
-            throws IllegalKey, IllegalCharacter
+            //throws IllegalKey, IllegalCharacter
     {
+        /*
         Scanner input = new Scanner(System.in);
 
         System.out.print("Enter Content: ");
@@ -30,6 +31,6 @@ public class Main {
         Decrypt decrypt = new Decrypt();
         decrypt.setDecryption_key(encrypt.getEncryption_key());
         decrypt.setDecrypt_this(encrypt.getEncrypted_data());
-        System.out.println("Decrypted Content: " +decrypt.decrypt_data());
+        System.out.println("Decrypted Content: " +decrypt.decrypt_data());*/
     }
 }

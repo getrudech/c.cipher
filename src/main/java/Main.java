@@ -1,15 +1,13 @@
-
-
 import java.util.Scanner;
 
-public class App {
+public class Main {
     public static void main(String[] args)
             throws IllegalKey, IllegalCharacter
     {
         Scanner input = new Scanner(System.in);
 
         System.out.print("Enter Content: ");
-        String content = input.nextLine();
+        String content = "Abc";// = input.nextLine();
         for(char ch : content.toCharArray())
         {
             if(!(ch >= 'A' && ch <= 'Z') && !(ch >= 'a' && ch <= 'z') && ch != ' ')
@@ -17,7 +15,7 @@ public class App {
         }
 
         System.out.print("Enter Key: ");
-        int key = input.nextInt();
+        int key = 5;//input.nextInt();
         if(!(key >= 1 && key <= 25))
             throw new IllegalKey(key);
 

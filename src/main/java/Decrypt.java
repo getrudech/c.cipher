@@ -33,7 +33,18 @@ public class Decrypt
     }
 
     public String decrypt_data()
+            throws IllegalKey, IllegalCharacter
     {
+
+        for(char ch : decrypt_this.toCharArray())
+        {
+            if(!(ch >= 'A' && ch <= 'Z') && !(ch >= 'a' && ch <= 'z') && ch != ' ')
+                throw new IllegalCharacter(ch);
+        }
+
+        if(!(decryption_key >= 1 && decryption_key <= 25))
+            throw new IllegalKey(decryption_key);
+
         for(int c = 0; c < decrypt_this.length(); ++c)
         {
             if(decrypt_this.charAt(c) != ' ')

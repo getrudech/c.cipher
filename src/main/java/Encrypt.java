@@ -30,7 +30,17 @@ public class Encrypt
     }
 
     public String encrypt_data()
+            throws IllegalKey, IllegalCharacter
     {
+        for(char ch : encrypt_this.toCharArray())
+        {
+            if(!(ch >= 'A' && ch <= 'Z') && !(ch >= 'a' && ch <= 'z') && ch != ' ')
+                throw new IllegalCharacter(ch);
+        }
+
+        if(!(encryption_key >= 1 && encryption_key <= 25))
+            throw new IllegalKey(encryption_key);
+
         for(int c = 0; c < encrypt_this.length(); ++c)
         {
             if(encrypt_this.charAt(c) != ' ')

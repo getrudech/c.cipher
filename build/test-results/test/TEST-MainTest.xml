@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="MainTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-08-14T19:10:15" hostname="getrude-Lenovo-IdeaPad-S145-14IIL" time="0.004">
-  <properties/>
-  <testcase name="decrypt_data_decryptFGHtoABC" classname="MainTest" time="0.004"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

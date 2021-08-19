@@ -14,10 +14,7 @@ public class Encrypt
 
     public int getEncryption_key() { return encryption_key; }
 
-    public void setEncryption_key(int encryption_key)
-    {
-        this.encryption_key= encryption_key;
-    }
+    public void setEncryption_key(int encryption_key) { this.encryption_key= encryption_key; }
 
     public String getEncrypt_this()
     {
